@@ -22,6 +22,7 @@ jobs:
           sudo apt-get install -y openscad xvfb
           python3 -m pip install --user -r requirements.txt
       - name: Render STL and verify geometry
+        # networkx is required by trimesh to find connected components
         run: python3 tests/validate_design.py
       - name: Render 3D view
         run: |
