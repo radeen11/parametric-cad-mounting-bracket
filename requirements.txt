@@ -1,1 +1,2 @@
 trimesh>=4,<6
+networkx>=3,<5
