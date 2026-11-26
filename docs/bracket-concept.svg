@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 690" role="img" aria-labelledby="title desc">
+<title id="title">Gusseted mounting bracket: dimensional concept illustration</title>
+<desc id="desc">Three conceptual views of an 80 mm wide, 65 mm deep, 70 mm high L-bracket with four base holes, two upright holes, and two gussets. Nominal geometry only; not a manufacturing drawing.</desc>
+<rect width="1200" height="690" fill="#111927"/>
+<text x="52" y="65" fill="#e8f1ff" font-family="system-ui,sans-serif" font-size="35" font-weight="700">PARAMETRIC GUSSETED BRACKET</text>
+<text x="54" y="102" fill="#b5c8da" font-family="system-ui,sans-serif" font-size="18">Design concept • nominal dimensions in mm • not to scale for manufacture</text>
+<g font-family="system-ui,sans-serif">
+<rect x="45" y="135" width="355" height="452" rx="14" fill="#1d2b3d"/>
+<text x="70" y="174" fill="#e3effb" font-size="24" font-weight="650">Front view</text>
+<path d="M98 472 L98 206 L330 206 L330 472 Z" fill="#2c4962" stroke="#91b7d1" stroke-width="3"/>
+<path d="M98 446 H330 V472 H98 Z" fill="#4f88a7"/>
+<circle cx="145" cy="323" r="14" fill="#172435" stroke="#b3d5ea" stroke-width="4"/>
+<circle cx="284" cy="323" r="14" fill="#172435" stroke="#b3d5ea" stroke-width="4"/>
+<path d="M98 210 V199 M330 210 V199 M98 194 H330" stroke="#e3b76d" stroke-width="2" fill="none"/>
+<text x="215" y="187" fill="#f2c880" font-size="17" text-anchor="middle">80 width</text>
+<text x="85" y="345" fill="#f2c880" font-size="17" text-anchor="middle" transform="rotate(-90 85 345)">70 height</text>
+<text x="218" y="514" text-anchor="middle" fill="#c4d5e6" font-size="18">2 upright holes Ø6.6</text>
+<text x="218" y="541" text-anchor="middle" fill="#a8bfce" font-size="15">50 mm center spacing</text>
+<rect x="423" y="135" width="355" height="452" rx="14" fill="#1d2b3d"/>
+<text x="448" y="174" fill="#e3effb" font-size="24" font-weight="650">Top view</text>
+<rect x="477" y="236" width="247" height="230" fill="#4b7d9c" stroke="#aacfe4" stroke-width="3"/>
+<rect x="477" y="447" width="247" height="19" fill="#85aebf"/>
+<g fill="#182b3e" stroke="#d7ecf7" stroke-width="3">
+<circle cx="524" cy="292" r="11"/><circle cx="677" cy="292" r="11"/>
+<circle cx="524" cy="391" r="11"/><circle cx="677" cy="391" r="11"/>
+</g>
+<path d="M477 227 H724" stroke="#e3b76d" stroke-width="2"/>
+<text x="601" y="220" text-anchor="middle" fill="#f2c880" font-size="17">80 width</text>
+<path d="M740 236 V466" stroke="#e3b76d" stroke-width="2"/>
+<text x="754" y="357" fill="#f2c880" font-size="17" transform="rotate(-90 754 357)" text-anchor="middle">65 depth</text>
+<text x="600" y="514" text-anchor="middle" fill="#c4d5e6" font-size="18">4 base holes Ø6.6</text>
+<text x="600" y="541" text-anchor="middle" fill="#a8bfce" font-size="15">2 rows × 2 columns</text>
+<rect x="801" y="135" width="355" height="452" rx="14" fill="#1d2b3d"/>
+<text x="826" y="174" fill="#e3effb" font-size="24" font-weight="650">Side view</text>
+<path d="M852 464 H1116 V445 H1097 V218 H1078 V445 H852 Z" fill="#4b7d9c" stroke="#aacfe4" stroke-width="3"/>
+<path d="M966 445 L1078 319 V445 Z" fill="#d7a965" stroke="#f1d29a" stroke-width="3"/>
+<path d="M1061 445 V354 L988 445 Z" fill="#aa793e" opacity=".55"/>
+<path d="M854 487 H1117" stroke="#e3b76d" stroke-width="2"/>
+<text x="984" y="511" fill="#f2c880" font-size="17" text-anchor="middle">65 depth</text>
+<path d="M1133 218 V464" stroke="#e3b76d" stroke-width="2"/>
+<text x="1145" y="346" fill="#f2c880" font-size="17" text-anchor="middle" transform="rotate(-90 1145 346)">70 height</text>
+<text x="977" y="541" text-anchor="middle" fill="#c4d5e6" font-size="18">2 optional web gussets</text>
+<text x="976" y="565" text-anchor="middle" fill="#a8bfce" font-size="15">5 mm plate thickness</text>
+<text x="52" y="635" fill="#d4e0ed" font-size="19" font-weight="600">Default geometry: 80 × 65 × 70 mm • 6 clearance holes • 5 mm plates • 2 optional side webs</text>
+<text x="52" y="663" fill="#98aabd" font-size="15">Concept sketch only. Hole positions and all editable parameters are defined in cad/gusseted_bracket.scad.</text>
+</g></svg>
