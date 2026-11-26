@@ -1,0 +1,43 @@
+name: Build and validate CAD exports
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "cad/**"
+      - "tests/**"
+      - ".github/workflows/build-cad.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install OpenSCAD and mesh validation
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openscad xvfb
+          python3 -m pip install --user -r requirements.txt
+      - name: Render STL and verify geometry
+        run: python3 tests/validate_design.py
+      - name: Render 3D view
+        run: |
+          mkdir -p docs exports
+          xvfb-run -a openscad \
+            -o docs/bracket-render.png \
+            --imgsize 1200,900 \
+            --camera 110,-145,125,58,0,20,220 \
+            --projection perspective \
+            cad/gusseted_bracket.scad
+      - name: Commit generated STL and preview if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add exports/gusseted_bracket.stl docs/bracket-render.png
+          if ! git diff --cached --quiet; then
+            git commit -m "Build validated STL and OpenSCAD render"
+            git push
+          fi
