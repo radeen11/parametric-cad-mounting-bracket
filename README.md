@@ -1,6 +1,8 @@
 # Parametric Gusseted Mounting Bracket
 
-![Three-view dimensional concept](docs/bracket-concept.svg)
+![OpenSCAD-rendered 3D gusseted mounting bracket](docs/bracket-render.png)
+
+[View the three-view dimensional concept](docs/bracket-concept.svg) · [Download the generated STL](exports/gusseted_bracket.stl)
 
 **[Editable OpenSCAD model](cad/gusseted_bracket.scad)** · **[Concept drawing](docs/bracket-concept.svg)** · **[Validation script](tests/validate_design.py)**
 
@@ -59,14 +61,16 @@ The test **rebuilds** the default STL, then checks its bounds, watertightness, a
 
 ## Validation scope
 
-A previous local prototype built from this CAD design was successfully rendered and checked as a single watertight solid with a bounding box of **80 × 65 × 70 mm**. The source and repeatable validation test are provided here; rebuild and rerun before treating GitHub exports as validated. Geometry checks do **not** establish material strength, allowable loading, fatigue life, fastener bearing, or manufacturing tolerances.
+**GitHub Actions successfully rebuilt the STL and preview image** from the checked-in source and passed the automated geometry test: one watertight connected solid with bounding dimensions **80 × 65 × 70 mm**. You can reproduce this via [Build and validate CAD exports](.github/workflows/build-cad.yml). Geometry checks do **not** establish material strength, allowable loading, fatigue life, fastener bearing, or manufacturing tolerances.
 
-**Next technical milestones:** export and commit regenerated STL/PNG assets, create a fully toleranced drawing, prototype, and document a justified load case.
+**Next technical milestones:** create a fully toleranced manufacturing drawing, prototype and inspect the part, select a material and documented load case, and perform relevant structural checks.
 
 ## Repository contents
 
 - [`cad/gusseted_bracket.scad`](cad/gusseted_bracket.scad) — editable parametric design source
 - [`docs/bracket-concept.svg`](docs/bracket-concept.svg) — conceptual three-view illustration
+- [`docs/bracket-render.png`](docs/bracket-render.png) — OpenSCAD-generated 3D image
+- [`exports/gusseted_bracket.stl`](exports/gusseted_bracket.stl) — verified watertight triangulated mesh
 - [`tests/validate_design.py`](tests/validate_design.py) — mesh verification
 - [`requirements.txt`](requirements.txt) — Python dependency
 - [`LICENSE-REFERENCE.txt`](LICENSE-REFERENCE.txt) — attributed upstream MIT reference
